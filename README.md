@@ -17,16 +17,18 @@
 
 ## Part 2: Building Your Website (For Every Project)
 
-### Step 1: Open Project Folder
-- Extract your project `.zip` file.
-- In Antigravity, click **File -> Open Folder** and select the extracted folder.
-
-### Step 2: Run Initial Setup
-- Open the **Terminal** at the bottom of Antigravity.
-- Paste this command and press **Enter**:
+### Step 1: Get the Template Code
+- **Option A (Download ZIP):** Download the repository ZIP file and extract it to a folder on your computer.
+- **Option B (Git Clone):** Clone this repository using Git:
   ```bash
-  npx -y create-next-app@latest ./
+  git clone <repository-url>
   ```
+- **Important:** If you cloned via Git, delete the `.git` folder inside the project directory so your new website project starts with a fresh Git history.
+
+### Step 2: Open Project Folder in Antigravity
+- Launch **Antigravity IDE**.
+- Click **File -> Open Folder** and select your project folder.
+- *(Note: Next.js and all required configuration files are already set up in this template, so no initial Next.js installation commands are needed!)*
 
 ### Step 3: Add Your Content & Research Data
 - Place all your project materials into the **`resources`** folder.
@@ -43,5 +45,6 @@
 6. The AI will now write all the code and build the complete application automatically!
 
 ### Step 5: Run & Preview Website
-- Double-click the **`Run.bat`** file in your project folder.
+- Double-click the **`Run.bat`** file created in your project folder.
 - Click the web link (URL) shown in the terminal to view your live site!
+
