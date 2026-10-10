@@ -21,7 +21,7 @@
 - **Option A (Download ZIP):** Download the repository ZIP file and extract it to a folder on your computer.
 - **Option B (Git Clone):** Clone this repository using Git:
   ```bash
-  git clone <repository-url>
+  git clone https://github.com/m-abdullah-awais/antigravity-nextjs-tools-site-template.git
   ```
 - **Important:** If you cloned via Git, delete the `.git` folder inside the project directory so your new website project starts with a fresh Git history.
 
