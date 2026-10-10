@@ -6,6 +6,7 @@
 
 ### Step 1: Download & Log In
 - Download and install **Antigravity IDE**: [antigravity.google/product/antigravity-ide/](https://antigravity.google/product/antigravity-ide/)
+- Download and install **Node.js**: [nodejs.org](https://nodejs.org/) (if not already installed)
 - Open the app and log in with your **Google Pro** account.
 
 ### Step 2: Configure Settings
@@ -46,5 +47,6 @@
 
 ### Step 5: Run & Preview Website
 - Double-click the **`Run.bat`** file created in your project folder.
-- Click the web link (URL) shown in the terminal to view your live site!
+- *(Note: `Run.bat` automatically checks for required dependencies and installs `node_modules` if they are not already installed before launching the application.)*
+- Click the web link (URL) shown in the terminal (`http://localhost:3050`) to view your live site!
 
