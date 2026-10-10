@@ -33,4 +33,3 @@ When the user runs `/build-tools-site`, "build tools site", or requests to initi
    - Automatically execute `/plan` adhering strictly to `.agents/rules/planning-template.md` across all 9 required sections.
    - Respect the single-language default (English only) unless `--multilingual` flag was provided.
    - Use the analyzed data from `resources/` as the baseline context.
-   - Permanently configure package.json dev script to `"next dev -p 3050"` and create a `Run.bat` file in the project root so double-clicking it opens `http://localhost:3050` and starts `npm run dev`. Never use default port 3000.

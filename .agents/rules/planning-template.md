@@ -68,7 +68,7 @@ For every page in every language, specify:
 - All scripts load after interactive, never impacting Lighthouse.
 
 ## SECTION 8: Phased Delivery Roadmap
-- Phase 1 (Speed-First MVP): English UK core pages, design system, SSG, Vercel deploy, Lighthouse 100, and root `Run.bat` launcher.
+- Phase 1 (Speed-First MVP): English UK core pages, design system, SSG, Vercel deploy, Lighthouse 100, and pre-configured root `Run.bat` launcher.
 - Phase 2 (Multilingual): DE, ES, FR, IT, NL, PL with native content, hreflang validated (ONLY if `--multilingual` flag active).
 - Phase 3 (SEO Depth): Full content, FAQ sections, internal linking, OG images, Search Console per locale.
 - Phase 4 (Ads and Conversion): Ad pixels, conversion tracking, cookie consent, landing page optimization.
@@ -76,8 +76,7 @@ For every page in every language, specify:
 
 ## SECTION 9: Development Commands & One-Click Launcher
 - npx create-next-app initialization with exact flags.
-- Configure `"dev": "next dev -p 3050"` in package.json permanently (never default 3000).
-- Creation of root `Run.bat` file containing `@echo off`, `start http://localhost:3050`, and `npm run dev` for 1-click user execution without terminal.
+- Pre-configured root `Run.bat` file containing `@echo off`, Node.js check, dependency check, `start http://localhost:3050`, and `npm run dev` for 1-click user execution without terminal.
 - npx next build (verify all pages show static in build output).
 - Lighthouse CLI audit per locale.
 - Vercel CLI: preview and production deployment.

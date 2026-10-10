@@ -28,4 +28,3 @@ Violating any of these is a critical failure. These rules override any conflicti
 
 13. **Multilingual Generation Control (Flag-Gated).** Do NOT create or plan multilingual pages (DE, ES, FR, IT, NL, PL) by default. By default, generate ONLY English pages. Multilingual generation must ONLY occur if the user explicitly passes the `--multilingual` flag when invoking `/build-tools-site` (e.g., `/build-tools-site --multilingual`) or explicitly requests multiple languages in their prompt.
 
-14. **Permanent Custom Port (Port 3050) & Run.bat Launcher.** Never use default port 3000. Permanently configure the project to run on port `3050` by setting `"dev": "next dev -p 3050"` in `package.json`. You MUST create a `Run.bat` batch file in the project root containing `start http://localhost:3050` and `npm run dev` so the user can run the web app on port `3050` with a single click without opening a terminal.
