@@ -10,14 +10,17 @@ This file tracks project memory, architectural decisions, and progress for the N
 4. Implementation plans follow `.agents/rules/planning-template.md`.
 5. Master prompt is stored at `temp/master_prompt.txt`.
 6. Build Tools Site skill is defined at `.agents/skills/build-tools-site/SKILL.md`.
+7. Analyze & Fix SEO Reports skill is defined at `.agents/skills/analyze-seo-reports/SKILL.md`.
 
 ## Data Source Protocol
 - Website details, keyword research, competitor lists, and content assets are placed in `resources/`.
-- The agent must automatically read and analyze all contents of `resources/` before planning or building.
+- SEO audit reports and optimization requests are placed in `temp/seo-reports/`.
+- The agent must automatically read and analyze all contents of `resources/` and `temp/seo-reports/`, activate relevant skills (`/seo-optimizer`, `/frontend-design`, `/senior-backend`), and execute all required fixes and implementations to perfection.
 
 ## Session Log & Progress
 - Master prompt configured to instruct agent to analyze `resources/` directly.
-- Project rules updated with Rule 12 (pre-analysis of `resources/`), and Rule 13 (`--multilingual` flag for multi-language). Custom port configuration rule removed since port 3050 and Run.bat are already pre-configured.
+- Project rules updated with Rule 12 (pre-analysis of `resources/`), Rule 13 (`--multilingual` flag for multi-language), and Rule 14 (`temp/seo-reports/` analysis and implementation protocol).
+- Created `/analyze-seo-reports` skill (`.agents/skills/analyze-seo-reports/SKILL.md`).
 - Planning template and `/build-tools-site` skill updated to reference pre-configured root `Run.bat`.
 - Fixed `Run.bat` syntax and path resolution so it runs reliably on double-click.
 

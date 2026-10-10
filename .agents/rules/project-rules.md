@@ -28,3 +28,6 @@ Violating any of these is a critical failure. These rules override any conflicti
 
 13. **Multilingual Generation Control (Flag-Gated).** Do NOT create or plan multilingual pages (DE, ES, FR, IT, NL, PL) by default. By default, generate ONLY English pages. Multilingual generation must ONLY occur if the user explicitly passes the `--multilingual` flag when invoking `/build-tools-site` (e.g., `/build-tools-site --multilingual`) or explicitly requests multiple languages in their prompt.
 
+14. **Analyze and Fix SEO Reports (temp/seo-reports/).** All SEO audit reports placed in `temp/seo-reports/` must be thoroughly analyzed. The agent must read all report files in `temp/seo-reports/`, activate relevant workspace skills (`/seo-optimizer`, `/frontend-design`, `/senior-backend`, `/analyze-seo-reports`), and execute all recommended fixes, technical improvements, schema markup, content adjustments, and design implementations to perfection.
+
+
