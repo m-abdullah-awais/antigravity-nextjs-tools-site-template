@@ -31,9 +31,12 @@ if not exist node_modules (
 )
 
 echo.
-echo [INFO] Opening browser and starting dev server on http://localhost:3050 ...
+echo [INFO] Starting dev server on http://localhost:3050 ...
+echo [INFO] Browser will open automatically once the server is ready.
 echo ===================================================
-start http://localhost:3050
+
+start "" /b node -e "const http=require('http');let c=0;function check(){http.get('http://localhost:3050',res=>{require('child_process').exec('start http://localhost:3050');process.exit(0);}).on('error',()=>{c++;if(c<60){setTimeout(check,500);}else{process.exit(0);}});}setTimeout(check,1000);"
+
 call npm run dev
 if errorlevel 1 (
     echo.
